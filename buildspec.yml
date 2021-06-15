@@ -13,8 +13,8 @@ phases:
       # - cd AuthorizationMicroservice
       # - mvn compile
       # - mvn package
-      mvn install
-      #   - echo " building docker image"
+      - mvn install
+      # - echo " building docker image"
       # - docker build -t service/authsapp .
       # - docker tag service/authsapp $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/auth-service:authsapp
    post_build:
